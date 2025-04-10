@@ -1,19 +1,41 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
 body{
-    display: flex;
-    justify-content: center;
     background-color: lightgray;
-}
-.navbar{
-    width: 90vw;
-    margin: 10px;
-    border-radius: 10px;
-    padding: 10px;
     display: flex;
-    justify-content: space-around;
-    background-color: green;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    display: flex;
+    height: 60dvh;
+    width: 60dvw;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #6DCD60;
+    border-radius: 40px;
+}
+label{
+    padding: 5px;
+}
+input{
+    margin: 10px;
+}
+a{
+    color: #163C01;
+}
+input[type="submit"]{
+    padding: 10px;
+    background-color: #297004;
+    border-color: white ;
+    border-radius: 10px;
     color: white;
+}
+.email-content{
+    display: flex;
+    flex-direction: column;
+}
+.senha-content{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 }
