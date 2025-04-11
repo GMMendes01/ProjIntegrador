@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Login</title>
+    <title>Login - EcoPoints</title>
 </head>
 <body>
-    <label for="login">Login</label>
-    <div class="content">
-      <div class="email-content">
-      <b><label for="email">Email</label></b>
-      <input type="email">
-      </div>
-      <div class="senha-content">
-      <label for="senha">Senha</label>
-      <input type="text" name="senha" id="senha">
-      <a href="#">Esqueci minha senha</a>
-      </div>
-      
-      <input type="submit" value="LOGIN">
-
+    <div class="login-container">
+        <h1>Login</h1>
+        <div class="content">
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" required>
+                    <a href="#" class="forgot-password">Esqueci minha senha</a>
+                </div>
+                <input type="submit" value="ENTRAR" class="submit-btn">
+            </form>
+        </div>
     </div>
 </body>
 </html>
