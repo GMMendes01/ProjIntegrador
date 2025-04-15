@@ -85,3 +85,13 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #1f5a03;
 }
+.teste{
+    display: flex;/*um ao lado do outro*/
+    justify-content: center;/*um ao lado do outro*/
+    margin-top: 20px;
+    text-align: center;
+}
+a{
+    margin-left: 5px;
+    color: #123502;
+}

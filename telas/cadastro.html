@@ -1,26 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/stylecadastro.css">
-    <title>Document</title>
+    <title>Cadastro - EcoPoints</title>
 </head>
 <body>
-    <div class="content">
-    <form action="cadastro.php" method="post">
-    <label for="nome">Nome</label>
-    <input type="text" name="nome" placeholder="nome">
-    <label for="nome">Sobrenome</label>
-    <input type="text"name="sobrenome" placeholder="sobrenome">
-    <label for="nome">Email</label>
-    <input type="email"name="email" placeholder="email">
-    <label for="nome">Senha</label>
-    <input type="password"name="senha" placeholder="senha">
-    <a href=""></a>   
-</div>
-    <button type="submit">cadastrar</button> 
-    </form>
-
+    <div class="container">
+        <div class="content">
+            <h1>Criar Conta</h1>
+            <form action="cadastro.php" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
+                </div>
+                
+                <button type="submit" class="submit-btn">Cadastrar</button>
+            </form>
+            <div class="teste">
+            <label for="">Já tem um cadastro? </label>
+            <a href="login.html"> Faça login</a>
+        </div>
+        </div>
+    </div>
 </body>
 </html>

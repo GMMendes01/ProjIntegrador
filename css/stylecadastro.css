@@ -1,31 +1,68 @@
-body{
-    background-color: lightgray;
-    width: 50vw;
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
-form{
-    display: flex;
-    margin: 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
 }
-input{
-    margin: 5px;
-}
+
 .content {
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
     background-color: #6DCD60;
-    border-radius: 20px;
-    padding: 40px;
+    border-radius: 15px;
+    padding: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-button[type="submit"] {
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilos do formulário */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #163C01;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #297004;
+    outline: none;
+}
+
+/* Estilo do botão */
+.submit-btn {
+    width: 100%;
     padding: 12px;
     background-color: #297004;
     color: white;
@@ -35,6 +72,32 @@ button[type="submit"] {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
-    width: 50vw;
     margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #1f5a03;
+}
+
+/* Responsividade */
+@media (max-width: 60vw) {
+    .content {
+        padding: 20px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        padding: 10px 12px;
+    }
+}
+.teste{
+    display: flex;/*um ao lado do outro*/
+    justify-content: center;/*um ao lado do outro*/
+    margin-top: 20px;
+    text-align: center;
+}
+a{
+    margin-left: 5px;
+    color: #123502;
 }
