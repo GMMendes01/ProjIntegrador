@@ -1,6 +1,6 @@
 body{
     background-color: lightgray;
-    
+    width: 50vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,4 +24,17 @@ input{
     border-radius: 20px;
     padding: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+button[type="submit"] {
+    padding: 12px;
+    background-color: #297004;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 50vw;
+    margin-top: 10px;
 }
