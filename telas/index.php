@@ -6,6 +6,10 @@
     <title>EcoPoints</title>
 </head>
 <body>
+<?php 
+include('navbar.html');
+    ?>
+    <img src="../img/imagem1.png" alt="">
     
 </body>
 </html>
