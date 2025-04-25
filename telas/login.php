@@ -9,8 +9,11 @@
 <body>
     <div class="login-container">
         <h1>Login</h1>
+        <?php if(isset($_GET['erro'])) { ?>
+            <p style="color:red;">Usuário ou senha incorretos!</p>
+        <?php } ?>
         <div class="content">
-            <form action="#" method="post">
+            <form action="verifica_login.php" method="post">
                 <div class="input-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>

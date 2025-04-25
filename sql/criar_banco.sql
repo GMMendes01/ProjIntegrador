@@ -3,8 +3,8 @@ use banco2;
 
 CREATE table cadastro(
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(50) DEFAULT NULL,
-    sobrenome VARCHAR(50) DEFAULT NULL,
+    nome VARCHAR(50) NOT NULL,
+    sobrenome VARCHAR(50) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
     senha VARCHAR(50) NOT NULL
 );

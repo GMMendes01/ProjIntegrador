@@ -1,53 +1,33 @@
 <?php
 include("conexao.php");
 
-// Validação básica dos dados
+// Validações básicas
 if (empty($_POST['nome']) || empty($_POST['email']) || empty($_POST['senha'])) {
-    die("Preencha todos os campos obrigatórios!");
+    die("Preencha todos os campos!");
 }
 
-// Limpeza e validação dos inputs
-$nome = mysqli_real_escape_string($conn, trim($_POST['nome']));
-$sobrenome = mysqli_real_escape_string($conn, trim($_POST['sobrenome']));
-$email = mysqli_real_escape_string($conn, trim($_POST['email']));
-
-// Validação de email
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    die("Formato de email inválido!");
-}
+$nome = trim($_POST['nome']);
+$email = trim($_POST['email']);
+$senha = trim($_POST['senha']);
 
 // Verifica se email já existe
-$check_email = mysqli_prepare($conn, "SELECT id FROM cadastro WHERE email = ?");
-mysqli_stmt_bind_param($check_email, "s", $email);
-mysqli_stmt_execute($check_email);
-mysqli_stmt_store_result($check_email);
+$check = $conn->prepare("SELECT id FROM cadastro WHERE email = ?");
+$check->bind_param("s", $email);
+$check->execute();
+$check->store_result();
 
-if (mysqli_stmt_num_rows($check_email) > 0) {
-    die("Este email já está cadastrado!");
+if ($check->num_rows > 0) {
+    die("Email já cadastrado!");
 }
 
-// Hash da senha
-$senha_hash = password_hash($_POST['senha'], PASSWORD_DEFAULT);
+// Insere sem hash (APENAS PARA TESTES)
+$stmt = $conn->prepare("INSERT INTO cadastro (nome, email, senha) VALUES (?, ?, ?)");
+$stmt->bind_param("sss", $nome, $email, $senha);
 
-// Preparação da query com parâmetros seguros
-$stmt = mysqli_prepare($conn, "INSERT INTO cadastro (nome, sobrenome, email, senha) VALUES (?, ?, ?, ?)");
-mysqli_stmt_bind_param($stmt, "ssss", $nome, $sobrenome, $email, $senha_hash);
-
-// Execução e tratamento de erros
-if (mysqli_stmt_execute($stmt)) {
-    session_start();
-    $_SESSION['cadastro_sucesso'] = true;
-    $_SESSION['nome_usuario'] = $nome;
-    
-    // Redirecionamento seguro
-    header("Location: index.php");
+if ($stmt->execute()) {
+    header("Location: login.php?sucesso=1");
     exit();
 } else {
-    error_log("Erro no cadastro: " . mysqli_error($conn));
-    die("Ocorreu um erro ao cadastrar. Por favor, tente novamente.");
+    die("Erro no cadastro: " . $conn->error);
 }
-
-// Fechar statements e conexão
-mysqli_stmt_close($stmt);
-mysqli_close($conn);
 ?>
