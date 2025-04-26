@@ -25,9 +25,13 @@ h1{
     text-align: center;
     color: darkgreen;
 }
-img{
+img[name="img-principal"]{
     margin: 10px;
 
     width: 80dvw;
     height: 70dvh;
+}
+img[name="img-1"]{
+    width: 20dvw;
+    height: 40dvh;
 }
