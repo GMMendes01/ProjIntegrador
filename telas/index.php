@@ -12,10 +12,16 @@
 include('navbar.html');
     ?>
     <div class="container">
-        
- <img src="../img/imagem1.png"  width="700" height="500" alt="">
+
+ <img src="../img/imagem1.png" alt="">
+
+ <div class="p1">
  <p>Transforme seus resíduos em recompensas com o EcoPoints! 🌱♻️ Cada ação sustentável conta: recicle, acumule pontos e troque por benefícios incríveis enquanto ajuda a preservar o planeta. Junte-se a essa revolução verde e faça a diferença hoje mesmo – porque cuidar do meio ambiente nunca foi tão gratificante!</p>
  </div>
+ <br>
+ <h1>Como reciclar</h1>
+ 
+</div>
 
 
     <!--
