@@ -2,11 +2,12 @@
 include("conexao.php");
 
 // Validações básicas
-if (empty($_POST['nome']) || empty($_POST['email']) || empty($_POST['senha'])) {
+if (empty($_POST['nome']) || empty($_POST['email']) || empty($_POST['senha']) || empty($_POST['nome'])) {
     die("Preencha todos os campos!");
 }
 
 $nome = trim($_POST['nome']);
+$sobrenome = trim($_POST['sobrenome']);
 $email = trim($_POST['email']);
 $senha = trim($_POST['senha']);
 
@@ -21,8 +22,8 @@ if ($check->num_rows > 0) {
 }
 
 // Insere sem hash (APENAS PARA TESTES)
-$stmt = $conn->prepare("INSERT INTO cadastro (nome, email, senha) VALUES (?, ?, ?)");
-$stmt->bind_param("sss", $nome, $email, $senha);
+$stmt = $conn->prepare("INSERT INTO cadastro (nome, sobrenome, email, senha) VALUES (?, ?, ?, ?)");
+$stmt->bind_param("ssss", $nome, $sobrenome, $email, $senha);
 
 if ($stmt->execute()) {
     header("Location: login.php?sucesso=1");
