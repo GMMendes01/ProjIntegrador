@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="styleindex.css">
+    <link rel="stylesheet" href="../css/styleindex.css">
     <title>EcoPoints</title>
 </head>
 <body>
 <?php 
 include('navbar.html');
     ?>
-
-
+    <div class="container">
+        
+ <img src="../img/imagem1.png"  width="700" height="500" alt="">
+ <p>Transforme seus resíduos em recompensas com o EcoPoints! 🌱♻️ Cada ação sustentável conta: recicle, acumule pontos e troque por benefícios incríveis enquanto ajuda a preservar o planeta. Junte-se a essa revolução verde e faça a diferença hoje mesmo – porque cuidar do meio ambiente nunca foi tão gratificante!</p>
+ </div>
 
 
     <!--

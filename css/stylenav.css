@@ -33,7 +33,7 @@ body {
     background-color: green;
     border: none;
     cursor: pointer;
-    padding: 5px;
+    padding: 15px;
     border-radius: 4px;
 }
 
@@ -61,7 +61,7 @@ body {
 
 .show {
     display: block;
-    margin-top: 100px;/*posicao do conteudo dentro do botao menu*/
+    top: 10px; /*posicao do conteudo dentro do botao menu*/
 }
 
 /* Alinhamento dos itens da navbar */
@@ -69,4 +69,8 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+button:focus{
+    border: none;
+    outline: none;
 }
