@@ -21,7 +21,8 @@ input {
     border: none;
     width: 80vw;
     height: 5vh;
-    text-indent: 15px;
+    text-indent: 15px;/*place holder margin*/
+    
 }
 .nome, .email, .telefone, .mensagem{
     display: flex;
@@ -55,6 +56,7 @@ input[type="submit"]{
     font-size: medium;
     background-color: forestgreen;
     color: white;
+    border: 3px solid white; 
 }
 textarea{
     border-radius: 10px;
