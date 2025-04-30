@@ -3,6 +3,7 @@
     border: 0;
 }
 body{
+    background-color: lightgrey;
  /*
     flex-direction: column;
     justify-content: center;
@@ -36,7 +37,6 @@ img[name="img-1"]{
     height: 40dvh;
 }
 
-
 .button {
     display: block;
     position: relative;
@@ -55,7 +55,7 @@ img[name="img-1"]{
     content: "";
     position: absolute;
     border-radius: 50%;
-    inset: 7px;
+    inset: 6px;
   }
   
   .button:before {
@@ -91,7 +91,7 @@ img[name="img-1"]{
   .button-box {
     display: flex;
     position: absolute;
-    top: 0;
+    top: 4px;
     left: 0;
   }
   
@@ -109,3 +109,4 @@ img[name="img-1"]{
     transition: 0.4s;
     transform: translateX(-56px);
   }
+ 

@@ -11,7 +11,20 @@
 <?php 
 include('navbar.html');
     ?>
-    <button class="button" id="backBtn">
+    
+
+    <div class="container">
+
+ <img name="img-principal" src="../img/imagem1.png" alt="">
+
+ <div class="p1">
+ <p>Transforme seus resíduos em recompensas com o EcoPoints! 🌱♻️ Cada ação sustentável conta: recicle, acumule pontos e troque por benefícios incríveis enquanto ajuda a preservar o planeta. Junte-se a essa revolução verde e faça a diferença hoje mesmo – porque cuidar do meio ambiente nunca foi tão gratificante!</p>
+ </div>
+ <br>
+ <h1>Como reciclar</h1>
+ <img name="img-1" src="../img/47A7FFD8-2DCE-4040-A80D-1255C26BB7F9.png" alt="">
+ 
+ <button class="button" id="backBtn">
   <div class="button-box">
     <span class="button-elem">
       <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
@@ -29,19 +42,6 @@ include('navbar.html');
     </span>
   </div>
 </button>
-
-    <div class="container">
-
- <img name="img-principal" src="../img/imagem1.png" alt="">
-
- <div class="p1">
- <p>Transforme seus resíduos em recompensas com o EcoPoints! 🌱♻️ Cada ação sustentável conta: recicle, acumule pontos e troque por benefícios incríveis enquanto ajuda a preservar o planeta. Junte-se a essa revolução verde e faça a diferença hoje mesmo – porque cuidar do meio ambiente nunca foi tão gratificante!</p>
- </div>
- <br>
- <h1>Como reciclar</h1>
- <img name="img-1" src="../img/47A7FFD8-2DCE-4040-A80D-1255C26BB7F9.png" alt="">
- 
- 
  
 
 </div>
