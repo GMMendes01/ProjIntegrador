@@ -1,0 +1,31 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    margin: 20px;
+    padding: 12px;
+    background-color: #297004;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 50dvw;
+    margin-top: 10px;
+}
