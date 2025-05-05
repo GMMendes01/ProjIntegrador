@@ -21,31 +21,31 @@ include('navbar.html');
  <p>Transforme seus resíduos em recompensas com o EcoPoints! 🌱♻️ Cada ação sustentável conta: recicle, acumule pontos e troque por benefícios incríveis enquanto ajuda a preservar o planeta. Junte-se a essa revolução verde e faça a diferença hoje mesmo – porque cuidar do meio ambiente nunca foi tão gratificante!</p>
  </div>
  <br>
+ 
  <h1>Como reciclar</h1>
+
+ <div class="how-to-recycle">
+    <div class="img-txt1">
  <img name="img-1" src="../img/47A7FFD8-2DCE-4040-A80D-1255C26BB7F9.png" alt="">
+ <div id="passo1">
+    <h5>Passo 1 - Separação</h6><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo autem eum ipsa praesentium expedita exercitationem suscipit ullam illum architecto laboriosam rem minus, voluptatem sequi deserunt necessitatibus eius quaerat voluptatum optio.</p></div>
+    </div>
+    <br>
  
- <button class="button" id="backBtn">
-  <div class="button-box">
-    <span class="button-elem">
-      <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
-        ></path>
-      </svg>
-    </span>
-    <span class="button-elem">
-      <svg viewBox="0 0 46 40">
-        <path
-          d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
-        ></path>
-      </svg>
-    </span>
-  </div>
-</button>
- 
+    <div class="img-txt2">
+    <div id="passo2">
+    <h5>Passo 2 - Seilaoq</h6><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo autem eum ipsa praesentium expedita exercitationem suscipit ullam illum architecto laboriosam rem minus, voluptatem sequi deserunt necessitatibus eius quaerat voluptatum optio.</p></div>
+     <img name="img-1" src="../img/47A7FFD8-2DCE-4040-A80D-1255C26BB7F9.png" alt="">
+    </div>
+    <br>
 
+    <div class="img-txt1">
+ <img name="img-1" src="../img/47A7FFD8-2DCE-4040-A80D-1255C26BB7F9.png" alt="">
+ <div id="passo3">
+    <h5>Passo 3 - Separação</h6><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo autem eum ipsa praesentium expedita exercitationem suscipit ullam illum architecto laboriosam rem minus, voluptatem sequi deserunt necessitatibus eius quaerat voluptatum optio.</p></div>
+    </div>
+    <br>
 </div>
-
 
     <!--
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
