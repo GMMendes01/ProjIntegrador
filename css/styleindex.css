@@ -3,6 +3,7 @@
     border: 0;
 }
 body{
+    width: 100dvw;
     background-color: rgb(240, 234, 234);
  /*
     flex-direction: column;
@@ -28,10 +29,8 @@ h1{
     color: darkgreen;
 }
 img[name="img-principal"]{
-    margin: 10px;
-
-    width: 80dvw;
-    height: 70dvh;
+    width: 100dvw;
+    height: 90dvh;
 }
 img[name="img-1"]{
     width: 20dvw;
