@@ -25,11 +25,12 @@ body{
     background-color: rgb(24, 107, 38);
 }
 h1{
+    font-size: 100px;
     text-align: center;
     color: darkgreen;
 }
 img[name="img-principal"]{
-    width: 100dvw;
+    width: 100vw;
     height: 90dvh;
 }
 img[name="img-1"]{
@@ -43,29 +44,44 @@ img[name="img-1"]{
     flex-direction: column;
 }
 [id="passo1"]{
+    
+    width: 30vw;
+    color: white;
     margin:40px;
     border-radius: 10px;
-    background-color: rgb(38, 192, 71);
+    background-color: forestgreen;
     padding: 10px;
 }
-h5{
-    color: white;
-}
+
 [id="passo2"]{
+    width: 30vw;
+    color: white;
     margin:40px;
     border-radius: 10px;
-    background-color:rgb(38, 192, 71);
+    background-color:forestgreen;
+    padding: 10px;
+}
+[id="passo3"]{
+    width: 30vw;
+    color: white;
+    margin:40px;
+    border-radius: 10px;
+    background-color: forestgreen;
     padding: 10px;
 }
 .img-txt1{
     display: flex;
+    justify-content: space-around;
 }
 .img-txt2{
     display: flex;
 }
-[id="passo3"]{
-    margin:40px;
-    border-radius: 10px;
-    background-color: rgb(38, 192, 71);
-    padding: 10px;
+
+.how-to-recycle{
+    max-width: 80vw;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
 }
