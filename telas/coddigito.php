@@ -154,7 +154,7 @@
                     if (data.status === 1 && data.product) {
                         exibirProduto(data.product, quantidade);
                     } else {
-                        showError('Produto não encontrado na base de dados. Você pode cadastrar manualmente.');
+                        showError('Produto não encontrado na base de dados. Você pode cadastrar manualmente no site: https://world.openfoodfacts.org/contribute');
                     }
                 } catch (error) {
                     console.error('Erro na API:', error);
