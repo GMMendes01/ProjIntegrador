@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styleindex.css">
+    <link rel="icon" href="../img/BE9291F6-A43A-4824-99E8-EF4B582472B4.png" type="image/x-icon">
      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
   <!-- MDB -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet"/>
@@ -57,26 +58,32 @@ Benefício: Pontos extras por escolher locais a menos de 1km da sua casa!
     <br>
 
     <div class="img-txt1">
- <img name="img-1" src="../img/47A7FFD8-2DCE-4040-A80D-1255C26BB7F9.png" alt="">
- <div id="passo3">
-    <h5>Passo 3 - Leve ao ponto e colete os pontos</h6><p>Valide sua ação sustentável de duas formas: <br>
-🔹 Opção 1: Leia o QR Code do ecoponto com seu celular. <br>
-🔹 Opção 2: Tire uma foto do material descartado no app (tecnologia de reconhecimento de imagem). <br>
-
-✔️ Pontuação Instantânea: <br>
-
-50 pts/kg para plástico/metal <br>
-
-30 pts/kg para papel/vidro <br>
-
-100 pts/litro para óleo</p></div>
+      <img name="img-1" src="../img/47A7FFD8-2DCE-4040-A80D-1255C26BB7F9.png" alt="">
+      <div id="passo3">
+      <h5>Passo 3 - Leve ao ponto e colete os pontos</h5>
+      
+        <p>Valide sua ação sustentável de duas formas: <br>
+        🔹 Opção 1: Leia o QR Code do ecoponto com seu celular. <br>
+        🔹 Opção 2: Tire uma foto do material descartado no app (tecnologia de reconhecimento de imagem). <br>
+        ✔️ Pontuação Instantânea: <br>
+        50 pts/kg para plástico/metal <br>
+        30 pts/kg para papel/vidro <br>
+        100 pts/litro para óleo</p></div>
     </div>
     <br>
+<div class="img-txt2">
+    <div id="passo2">
+    <h5>Passo 4 - Troque seus Pontos por Recompensas</h6><p>No Eco Marketplace, resgate seus pontos por: <br>
+🛒 Descontos: Em lojas sustentáveis parceiras (ex.: produtos orgânicos). <br>
+🌱 Doações: Converta pontos em plantio de árvores ou limpeza de praias. <br>
+🎁 Prêmios: Ecobags, copos reutilizáveis ou cursos sobre sustentabilidade.
 
-    
-
-
+</p></div>
+     <img name="img-1" src="../img/47A7FFD8-2DCE-4040-A80D-1255C26BB7F9.png" alt="">
+    </div>
 </div>
+</div>
+
 <footer class="bg-body-tertiary text-center">
   <!-- Grid container -->
   <div class="container p-4 pb-0">
@@ -152,7 +159,6 @@ Benefício: Pontos extras por escolher locais a menos de 1km da sua casa!
   </div>
   <!-- Copyright -->
 </footer>
-
 <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.0.0/mdb.umd.min.js"></script>
    
 </body>

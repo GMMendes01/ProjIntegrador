@@ -4,17 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/pontosstyle.css">
+    <link rel="icon" href="../img/BE9291F6-A43A-4824-99E8-EF4B582472B4.png" type="image/x-icon">
     <title>Registro de Pontos</title>
 </head>
 <body>
     <div class="container">
 
         <h1>Registro de Pontos</h1>
-        <button>Scanear código de barras</button>
+        <button id="scannerBtn">Scanear código de barras</button>
 
 
 
         <button onclick="window.location.href='coddigito.php'">Digitar código de barras</button>
     </div>
-</body> 
+</body> <script>
+// Adicione este script
+document.getElementById('scannerBtn').addEventListener('click', function() {
+    const tooltip = document.createElement('div');
+    tooltip.innerHTML = '🚀 Em breve! Estamos finalizando o leitor por câmera';
+    tooltip.style.position = 'absolute';
+    tooltip.style.background = '#4CAF50';
+    tooltip.style.color = 'white';
+    tooltip.style.padding = '10px';
+    tooltip.style.borderRadius = '5px';
+    tooltip.style.marginTop = '5px';
+    tooltip.style.boxShadow = '0 2px 5px rgba(0,0,0,0.2)';
+    
+    this.parentNode.appendChild(tooltip);
+    
+    setTimeout(() => {
+        tooltip.remove();
+    }, 3000);
+});
+</script>
 </html>
