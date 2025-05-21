@@ -84,7 +84,7 @@
         <h1>Eco Points</h1>
         <p>Registre produtos para reciclagem e ganhe pontos</p>
         
-        <form id="produtoForm">
+        <form id="produtoForm" method="post" action="">
             <div class="form-group">
                 <label for="codigoBarras">Código de Barras (EAN-13):</label>
                 <input type="text" id="codigoBarras" name="codigoBarras" 
