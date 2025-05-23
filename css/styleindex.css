@@ -1,4 +1,5 @@
 *{
+    font-family: Arial, sans-serif;
     margin: 0;
     border: 0;
 }
@@ -31,7 +32,7 @@ h1{
 }
 img[name="img-principal"]{
     width: 100vw;
-    height: 90dvh;
+    height: 95dvh;
 }
 img[name="img-1"]{
     width: 20dvw;
@@ -40,11 +41,12 @@ img[name="img-1"]{
 
 
 .how-to-recycle{
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
 }
 [id="passo1"]{
-    
+    font-size: large;
     width: 30vw;
     color: white;
     margin:40px;
@@ -54,6 +56,7 @@ img[name="img-1"]{
 }
 
 [id="passo2"]{
+    font-size: large;
     width: 30vw;
     color: white;
     margin:40px;
@@ -62,6 +65,7 @@ img[name="img-1"]{
     padding: 10px;
 }
 [id="passo3"]{
+    font-size: large;
     width: 30vw;
     color: white;
     margin:40px;
@@ -84,4 +88,8 @@ img[name="img-1"]{
 footer{
 display: flex;
 flex-direction: column;
+}
+h5{
+    padding: 10px;
+    font-weight: bolder;
 }
