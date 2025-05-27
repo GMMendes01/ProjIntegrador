@@ -5,8 +5,6 @@ body {
 }
 
 .navbar {
-    max-width: 100dvw;
-    width: 100dvw;
     display: flex;
     justify-content: space-between;
     align-items: center;

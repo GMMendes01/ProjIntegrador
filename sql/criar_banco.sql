@@ -8,3 +8,14 @@ CREATE table cadastro(
     email VARCHAR(100) NOT NULL UNIQUE,
     senha VARCHAR(50) NOT NULL
 );
+CREATE TABLE reciclagem (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario_id INT NOT NULL,
+    codigo_barras VARCHAR(13) NOT NULL,
+    nome_produto VARCHAR(255) NOT NULL,
+    material VARCHAR(50) NOT NULL,
+    quantidade INT NOT NULL,
+    pontos INT NOT NULL,
+    data_registro DATETIME NOT NULL,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);

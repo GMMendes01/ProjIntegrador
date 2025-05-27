@@ -4,7 +4,7 @@
     border: 0;
 }
 body{
-    width: 100dvw;
+
     background-color: rgb(240, 234, 234);
  /*
     flex-direction: column;
@@ -26,6 +26,8 @@ body{
     background-color: rgb(24, 107, 38);
 }
 h1{
+    margin-top: 8pxpx;
+    margin-bottom: 0px;
     font-size: 100px;
     text-align: center;
     color: darkgreen;
@@ -85,10 +87,7 @@ img[name="img-1"]{
 .how-to-recycle{
     width:100vw;
 }
-footer{
-display: flex;
-flex-direction: column;
-}
+
 h5{
     padding: 10px;
     font-weight: bolder;

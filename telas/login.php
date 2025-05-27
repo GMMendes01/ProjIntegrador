@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/BE9291F6-A43A-4824-99E8-EF4B582472B4.png" type="image/x-icon">
     <title>Login - EcoPoints</title>
 </head>
 <body>

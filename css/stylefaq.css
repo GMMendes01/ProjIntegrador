@@ -16,11 +16,12 @@ form{
     flex-direction: column;
 }
 input {
+    padding: 1px;
     margin: 5px;
     border-radius: 15px 0px 15px 0px;
     border: none;
     width: 80vw;
-    height: 5vh;
+    height: 7vh;
     text-indent: 15px;/*place holder margin*/
     
 }
@@ -44,7 +45,7 @@ h2{
     justify-content: center;
     padding: 10px;
     border-radius: 10px;
-    height: 80dvh;
+    height: 85dvh;
     background-color: rgb(0, 70, 11);
 }
 input[type="submit"]{
@@ -65,19 +66,20 @@ textarea{
     text-indent: 15px;
 }
 /*Style back btn*/
+/* Botão Voltar - mantido */
 .button {
-    top: 10px;
-
-    position: relative;
-    width: 56px;
-    height: 56px;
-    margin: 0;
-    overflow: hidden;
-    outline: none;
-    background-color: transparent;
-    cursor: pointer;
-    border: 0;
-  }
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 56px;
+  height: 56px;
+  margin: 0;
+  overflow: hidden;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+}
   
   .button:before,
   .button:after {
